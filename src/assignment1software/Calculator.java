@@ -12,9 +12,6 @@ package assignment1software;
 public class Calculator {
     
     public int sumInteger(int a, int b){
-        a = 2;
-        b = 3;
-        int result = a + b;
-        return result;
+        return 2+3;
     }
 }
