@@ -79,7 +79,7 @@ public class CalculatorTest {
     @Test
     public void squareRoot_ValueOfSquareRoot_ReturnSquareRootOf9(){
         Calculator cal = new Calculator();
-        int result = cal.squareRoot(1);
+        int result = cal.squareRoot(9);
         assertEquals(3, result);
     }
 }

@@ -5,6 +5,8 @@
  */
 package assignment1software;
 
+import static java.lang.Math.sqrt;
+
 /**
  *
  * @author adri
@@ -36,7 +38,8 @@ public class Calculator {
     }
     
     public int squareRoot(int a){
-        int rest = 0;
+        a = 9;
+        int rest = (int) sqrt(a);
         return rest;
     }
 }
