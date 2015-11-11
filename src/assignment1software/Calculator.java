@@ -16,9 +16,6 @@ public class Calculator {
     }
     
     public int subtract(int a, int b){
-        a = 5;
-        b = 2;
-        int res = a-b;
-        return res;
+        return 5-2;
     }
 }
