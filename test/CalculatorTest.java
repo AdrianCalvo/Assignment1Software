@@ -54,4 +54,11 @@ public class CalculatorTest {
         int result = cal.subtract(5, 2);
         assertEquals(3, result);
     }
+    
+      @Test
+    public void multiplyInteger_MultiplyTwoIntegers_ReturnValueEquals8(){
+        Calculator cal = new Calculator();
+        int result = cal.subtract(4, 2);
+        assertEquals(8, result);
+    }
 }
