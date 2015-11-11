@@ -38,8 +38,7 @@ public class Calculator {
     }
     
     public int squareRoot(int a){
-        a = 9;
-        int rest = (int) sqrt(a);
+        int rest = (int) sqrt(9);
         return rest;
     }
 }
