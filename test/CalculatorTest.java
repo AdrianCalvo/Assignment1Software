@@ -61,4 +61,11 @@ public class CalculatorTest {
         int result = cal.multiply(4, 2);
         assertEquals(8, result);
     }
+    
+       @Test
+    public void divideInteger_DivideTwoIntegers_ReturnValueEquals3(){
+        Calculator cal = new Calculator();
+        int result = cal.divide(9, 3);
+        assertEquals(9, result);
+    }
 }
