@@ -72,7 +72,7 @@ public class CalculatorTest {
     @Test
     public void factorial_ValueOfFactorial_ReturnFactorialOf5(){
         Calculator cal = new Calculator();
-        int result = cal.factorial(1);
+        int result = cal.factorial(5);
         assertEquals(120, result);
     }
 }

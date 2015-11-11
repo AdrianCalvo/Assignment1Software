@@ -15,7 +15,8 @@ public class Assignment1Software {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Calculator cal = new Calculator();
+        System.out.println(cal.factorial(5));
     }
     
 }

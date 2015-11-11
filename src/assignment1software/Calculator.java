@@ -28,7 +28,11 @@ public class Calculator {
     }
     
     public int factorial(int a){
-        int rest = 0;
-        return rest;
+        int number = 1;
+        for (int i = 1; i <= a; i++) {
+            number = number * i;
+        }
+        return number;
+        
     }
 }
