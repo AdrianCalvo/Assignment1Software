@@ -14,4 +14,11 @@ public class Calculator {
     public int sumInteger(int a, int b){
         return 2+3;
     }
+    
+    public int subtract(int a, int b){
+        a = 5;
+        b = 2;
+        int res = a+b;
+        return res;
+    }
 }

@@ -47,4 +47,11 @@ public class CalculatorTest {
         int result = cal.sumInteger(2, 3);
         assertEquals(5, result);
     }
+    
+    @Test
+    public void subtractInteger_SubtractTwoIntegers_ReturnValueEquals3(){
+        Calculator cal = new Calculator();
+        int result = cal.subtract(5, 2);
+        assertEquals(3, result);
+    }
 }
