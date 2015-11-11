@@ -66,6 +66,6 @@ public class CalculatorTest {
     public void divideInteger_DivideTwoIntegers_ReturnValueEquals3(){
         Calculator cal = new Calculator();
         int result = cal.divide(9, 3);
-        assertEquals(9, result);
+        assertEquals(3, result);
     }
 }
