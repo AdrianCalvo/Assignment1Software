@@ -24,9 +24,6 @@ public class Calculator {
     }
     
     public int divide(int a, int b){
-        a = 9;
-        b = 3;
-        int res = a/b;
-        return res;
+        return 9/3;
     }
 }
