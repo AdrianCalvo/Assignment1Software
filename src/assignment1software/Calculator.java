@@ -33,6 +33,10 @@ public class Calculator {
             number *= i;
         }
         return number;
-        
+    }
+    
+    public int squareRoot(int a){
+        int rest = 0;
+        return rest;
     }
 }

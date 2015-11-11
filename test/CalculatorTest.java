@@ -75,4 +75,11 @@ public class CalculatorTest {
         int result = cal.factorial(5);
         assertEquals(120, result);
     }
+    
+    @Test
+    public void squareRoot_ValueOfSquareRoot_ReturnSquareRootOf9(){
+        Calculator cal = new Calculator();
+        int result = cal.squareRoot(1);
+        assertEquals(3, result);
+    }
 }
