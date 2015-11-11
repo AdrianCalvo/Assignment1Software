@@ -26,4 +26,9 @@ public class Calculator {
     public int divide(int a, int b){
         return 9/3;
     }
+    
+    public int factorial(int a){
+        int rest = 0;
+        return rest;
+    }
 }

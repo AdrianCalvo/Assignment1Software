@@ -68,4 +68,11 @@ public class CalculatorTest {
         int result = cal.divide(9, 3);
         assertEquals(3, result);
     }
+    
+    @Test
+    public void factorial_ValueOfFactorial_ReturnFactorialOf5(){
+        Calculator cal = new Calculator();
+        int result = cal.factorial(1);
+        assertEquals(120, result);
+    }
 }
