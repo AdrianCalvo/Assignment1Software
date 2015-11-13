@@ -14,8 +14,8 @@ import static java.lang.Math.sqrt;
 public class Area {
     
     public final int NUMBERTWO = 2;
-    public final double NUMBERTHREE = 3.0;
-    public final double NUMBERFOUR = 4.0;
+    public final int NUMBERTHREE = 3;
+    public final int NUMBERFOUR = 4;
     public double equilateralTriangleArea (double a){
         double aux = sqrt(NUMBERTHREE)/NUMBERFOUR;
         double res = aux * Math.pow(a, NUMBERTWO);
