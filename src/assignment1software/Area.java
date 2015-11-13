@@ -11,4 +11,8 @@ package assignment1software;
  */
 public class Area {
     
+    public double equilateralTriangleArea (double a){
+        double area = 0.0;
+        return area;
+    }
 }
