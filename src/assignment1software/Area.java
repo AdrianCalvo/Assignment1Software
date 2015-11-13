@@ -28,12 +28,12 @@ public class Area {
     }
     
     public double triangleArea(double base, double height){
-        if (base == 0 || height == 0){
-            return 0.0;
+        if (base == NUMBERZERO || height == NUMBERZERO){
+            return NUMBERZERO;
         }
         else {
-          double res = base*height/NUMBERTWO;
-        return res;  
+            double res = base*height/NUMBERTWO;
+            return res;  
         }
         
     }
