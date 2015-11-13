@@ -50,4 +50,11 @@ public class AreaTest {
         double are = area.equilateralTriangleArea(5);
         assertEquals(10.83, are, DELTA);
     }
+    
+    @Test (expected = ArithmeticException.class)
+    public void EquilaterTriangleArea_TheNumberMustNotBeZero_ReturnException(){
+        Area area = new Area ();
+        double are = area.equilateralTriangleArea(0);
+        fail("NumberMustNotBeZero");
+    }
 }
