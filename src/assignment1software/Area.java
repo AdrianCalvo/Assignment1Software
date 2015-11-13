@@ -18,7 +18,12 @@ public class Area {
     public final int NUMBERFOUR = 4;
     public double equilateralTriangleArea (double a){
         double aux = sqrt(NUMBERTHREE)/NUMBERFOUR;
-        double res = aux * Math.pow(a, NUMBERTWO);
-        return res;
+        if (a == 0){
+            return 0.0;
+        }else {
+           double res = aux * Math.pow(a, NUMBERTWO);
+           return res; 
+        }
+        
     }
 }

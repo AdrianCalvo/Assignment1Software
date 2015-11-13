@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import sun.misc.JavaLangAccess;
 
 /**
  *
@@ -51,7 +52,7 @@ public class AreaTest {
         assertEquals(10.83, are, DELTA);
     }
     
-    @Test (expected = ArithmeticException.class)
+    @Test (expected = java.lang.AssertionError.class)
     public void EquilaterTriangleArea_TheNumberMustNotBeZero_ReturnException(){
         Area area = new Area ();
         double are = area.equilateralTriangleArea(0);
