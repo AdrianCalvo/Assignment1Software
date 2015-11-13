@@ -14,10 +14,11 @@ public class Assignment1Software {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Calculator cal = new Calculator();
         System.out.println(cal.factorial(5));
         System.out.println(cal.subtract(-5, -5));
+        System.out.println(cal.divide(3, 0));
     }
     
 }

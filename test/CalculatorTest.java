@@ -21,6 +21,7 @@ import static org.junit.Assert.*;
 public class CalculatorTest {
     
     public CalculatorTest() {
+        
     }
     
     @BeforeClass
@@ -33,6 +34,7 @@ public class CalculatorTest {
     
     @Before
     public void setUp() {
+        
     }
     
     @After
@@ -42,9 +44,11 @@ public class CalculatorTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
+    Calculator cal = new Calculator();
+    
     @Test
     public void sumInteger_SumTwoIntegers_ReturnValueEqual5() {
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.sumInteger(2, 3);
         assertEquals(5, result);
     }
@@ -52,14 +56,14 @@ public class CalculatorTest {
     
     @Test
     public void subtractInteger_SubtractTwoIntegers_ReturnValueEquals3(){
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.subtract(5, 2);
         assertEquals(3, result);
     }
     
       @Test
     public void multiplyInteger_MultiplyTwoIntegers_ReturnValueEquals8(){
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.multiply(4, 2);
         assertEquals(8, result);
     }
@@ -67,27 +71,27 @@ public class CalculatorTest {
     
     @Test
     public void divideInteger_DivideTwoIntegers_ReturnValueEquals3() throws Exception{
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.divide(9, 3);
         assertEquals(3, result);
     }
     @Test(expected = java.lang.AssertionError.class)
     public void divideInteger_CannotDivideBetweenZero_ReturnException() throws Exception{
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.divide(5, 0);
         fail("Zero is not valid");
     }
     
     @Test
     public void factorial_ValueOfFactorial_ReturnFactorialOf5(){
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.factorial(5);
         assertEquals(120, result);
     }
     
     @Test
     public void squareRoot_ValueOfSquareRoot_ReturnSquareRootOf9(){
-        Calculator cal = new Calculator();
+        //Calculator cal = new Calculator();
         int result = cal.squareRoot(9);
         assertEquals(3, result);
     }
