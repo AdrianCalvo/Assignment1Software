@@ -5,6 +5,8 @@
  */
 package assignment1software;
 
+import static java.lang.Math.sqrt;
+
 /**
  *
  * @author adri
@@ -12,7 +14,8 @@ package assignment1software;
 public class Area {
     
     public double equilateralTriangleArea (double a){
-        double area = 0.0;
+        double aux = sqrt(3)/4;
+        double area = aux * a;
         return area;
     }
 }

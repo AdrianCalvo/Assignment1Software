@@ -40,10 +40,12 @@ public class AreaTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
+    
+    public final double DELTA = 1e-15;
     @Test
     public void EquilaterTriangleArea_AddOneNumberToCalculate_ReturnCorrectValue() {
         Area area = new Area();
         double are = area.equilateralTriangleArea(5);
-        assertEquals(10.83, are);
+        assertEquals(10.83, are, DELTA);
     }
 }
