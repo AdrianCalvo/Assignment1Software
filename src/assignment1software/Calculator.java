@@ -14,19 +14,20 @@ import static java.lang.Math.sqrt;
 public class Calculator {
     
     public int sumInteger(int a, int b){
-        return 2+3;
+        return a+b;
     }
     
     public int subtract(int a, int b){
-        return 5-2;
+        return a-b;
+        
     }
     
     public int multiply(int a, int b){
-        return 4*2;
+        return a*b;
     }
     
     public int divide(int a, int b){
-        return 9/3;
+        return a/b;
     }
     
     public int factorial(int a){

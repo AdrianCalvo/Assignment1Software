@@ -17,6 +17,7 @@ public class Assignment1Software {
     public static void main(String[] args) {
         Calculator cal = new Calculator();
         System.out.println(cal.factorial(5));
+        System.out.println(cal.subtract(-5, -5));
     }
     
 }

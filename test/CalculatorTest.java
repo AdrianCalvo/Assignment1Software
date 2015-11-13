@@ -5,6 +5,7 @@
  */
 
 import assignment1software.Calculator;
+import javax.management.RuntimeOperationsException;
 import junit.framework.Assert;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -48,6 +49,7 @@ public class CalculatorTest {
         assertEquals(5, result);
     }
     
+    
     @Test
     public void subtractInteger_SubtractTwoIntegers_ReturnValueEquals3(){
         Calculator cal = new Calculator();
@@ -62,11 +64,18 @@ public class CalculatorTest {
         assertEquals(8, result);
     }
     
-       @Test
+    
+    @Test
     public void divideInteger_DivideTwoIntegers_ReturnValueEquals3(){
         Calculator cal = new Calculator();
         int result = cal.divide(9, 3);
         assertEquals(3, result);
+    }
+    @Test(expected = RuntimeOperationsException.class)
+    public void divideInteger_CannotDivideBetweenZero_ReturnException(){
+        Calculator cal = new Calculator();
+        int result = cal.divide(5, 0);
+        fail("Zero is not valid");
     }
     
     @Test
