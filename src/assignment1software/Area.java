@@ -28,7 +28,7 @@ public class Area {
     }
     
     public double triangleArea(double base, double height){
-        double res = 0;
+        double res = base*height/2;
         return res;
     }
     
