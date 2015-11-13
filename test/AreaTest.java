@@ -68,4 +68,11 @@ public class AreaTest {
         double are = area.triangleArea(NUMBERFIVE, NUMBERTHREE);
         assertEquals(7.5, are, DELTA);
     }
+    
+    @Test (expected = java.lang.ArithmeticException.class)
+    public void triangleArea_AnyNumberMustNotBeZero_ReturnException(){
+        Area area = new Area();
+        double are = area.triangleArea(0, 5);
+        fail();
+    }
 }
