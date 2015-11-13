@@ -16,9 +16,13 @@ public class Assignment1Software {
      */
     public static void main(String[] args) throws Exception {
         Calculator cal = new Calculator();
+        Area area = new Area();
+        
         System.out.println(cal.factorial(5));
         System.out.println(cal.subtract(-5, -5));
         System.out.println(cal.divide(3, 0));
+        System.out.println(area.equilateralTriangleArea(5));
+        
     }
     
 }

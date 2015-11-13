@@ -41,7 +41,9 @@ public class AreaTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     
-    public final double DELTA = 1e-15;
+    public final double DELTA = 0.1;
+    // I have used http://stackoverflow.com/questions/5686755/meaning-of-epsilon-argument-of-assertequals-for-double-values in order to know what a DELTA means.
+    
     @Test
     public void EquilaterTriangleArea_AddOneNumberToCalculate_ReturnCorrectValue() {
         Area area = new Area();
