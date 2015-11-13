@@ -25,6 +25,13 @@ public class Area {
            double res = aux * Math.pow(a, NUMBERTWO);
            return res; 
         }
-        
     }
+    
+    public double triangleArea(double base, double height){
+        double res = 0;
+        return res;
+    }
+    
+    
+    
 }
