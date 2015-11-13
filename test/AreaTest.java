@@ -43,19 +43,21 @@ public class AreaTest {
     //
     
     public final double DELTA = 0.1;
+    public final double EXPECTEDVALUE = 10.83;
+    public final int NUMBERZERO = 0;
     // I have used http://stackoverflow.com/questions/5686755/meaning-of-epsilon-argument-of-assertequals-for-double-values in order to know what a DELTA means.
     
     @Test
     public void EquilaterTriangleArea_AddOneNumberToCalculate_ReturnCorrectValue() {
         Area area = new Area();
         double are = area.equilateralTriangleArea(5);
-        assertEquals(10.83, are, DELTA);
+        assertEquals(EXPECTEDVALUE, are, DELTA);
     }
     
     @Test (expected = java.lang.AssertionError.class)
     public void EquilaterTriangleArea_TheNumberMustNotBeZero_ReturnException(){
         Area area = new Area ();
-        double are = area.equilateralTriangleArea(0);
+        double are = area.equilateralTriangleArea(NUMBERZERO);
         fail("NumberMustNotBeZero");
     }
 }

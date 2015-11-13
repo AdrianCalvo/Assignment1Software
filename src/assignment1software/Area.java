@@ -13,13 +13,14 @@ import static java.lang.Math.sqrt;
  */
 public class Area {
     
+    public final int NUMBERZERO = 0;
     public final int NUMBERTWO = 2;
     public final int NUMBERTHREE = 3;
     public final int NUMBERFOUR = 4;
     public double equilateralTriangleArea (double a){
         double aux = sqrt(NUMBERTHREE)/NUMBERFOUR;
-        if (a == 0){
-            return 0.0;
+        if (a == NUMBERZERO){
+            return NUMBERZERO;
         }else {
            double res = aux * Math.pow(a, NUMBERTWO);
            return res; 
