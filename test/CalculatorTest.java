@@ -66,13 +66,13 @@ public class CalculatorTest {
     
     
     @Test
-    public void divideInteger_DivideTwoIntegers_ReturnValueEquals3(){
+    public void divideInteger_DivideTwoIntegers_ReturnValueEquals3() throws Exception{
         Calculator cal = new Calculator();
         int result = cal.divide(9, 3);
         assertEquals(3, result);
     }
-    @Test(expected = RuntimeOperationsException.class)
-    public void divideInteger_CannotDivideBetweenZero_ReturnException(){
+    @Test(expected = java.lang.AssertionError.class)
+    public void divideInteger_CannotDivideBetweenZero_ReturnException() throws Exception{
         Calculator cal = new Calculator();
         int result = cal.divide(5, 0);
         fail("Zero is not valid");

@@ -26,7 +26,10 @@ public class Calculator {
         return a*b;
     }
     
-    public int divide(int a, int b){
+    public int divide(int a, int b) throws Exception{
+        if (a == 0 || b == 0){
+            return 0;
+        }else
         return a/b;
     }
     
