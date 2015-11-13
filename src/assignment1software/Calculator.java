@@ -13,6 +13,8 @@ import static java.lang.Math.sqrt;
  */
 public class Calculator {
     
+    public final int NUMBERZERO = 0;
+    
     public int sumInteger(int a, int b){
         return a+b;
     }
@@ -27,8 +29,8 @@ public class Calculator {
     }
     
     public int divide(int a, int b) throws Exception{
-        if (a == 0 || b == 0){
-            return 0;
+        if (a == NUMBERZERO || b == NUMBERZERO){
+            return NUMBERZERO;
         }else
         return a/b;
     }
