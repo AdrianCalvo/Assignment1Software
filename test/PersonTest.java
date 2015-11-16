@@ -18,6 +18,7 @@ import static org.junit.Assert.*;
  */
 public class PersonTest {
     Person p;
+    String expected = "It must be: ";
     public PersonTest() {
     }
     
@@ -49,6 +50,6 @@ public class PersonTest {
     public void getName_theNameMustBeCorrect_ThenReturnValue() {
         String name = p.getName();
         String nameExpected = "Adri";
-        assertEquals("The name must be Adri", name, nameExpected);
+        assertEquals(expected, name, nameExpected);
     }
 }
