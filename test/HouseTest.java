@@ -59,10 +59,10 @@ public class HouseTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    //@Test
-    //public void setPerson_ifThePersonCanRentTheHouse_ThenReturnOk() {
-        
-    //}
+    @Test
+    public void setPerson_ifThePersonCanRentTheHouse_ThenReturnOk() throws Exception {
+        house.setP(personWhoCanGetTheHouse);
+    }
     
     @Test (expected =  UnsupportedOperationException.class)
     public void setPerson_thisPersonCannotGetTheHouse_ThenReturnException() throws Exception{
