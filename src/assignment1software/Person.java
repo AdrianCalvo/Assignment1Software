@@ -54,6 +54,7 @@ public class Person {
         else{
             return false;
         }
+        
     }
     
     public boolean salaryIsUpperThan12000(){

@@ -46,10 +46,23 @@ public class PersonTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
+    
+    // Just to check get
     @Test
     public void getName_theNameMustBeCorrect_ThenReturnValue() {
         String name = p.getName();
         String nameExpected = "Adri";
         assertEquals(expected, name, nameExpected);
     }
+    
+    // Just to check set
+    @Test
+    public void setName_mustSetTheName(){
+        String name = "Name";
+        p.setName(name);
+        assertNotNull(p.getName());
+    }
+    
+    
+    
 }

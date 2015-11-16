@@ -14,4 +14,55 @@ public class House {
     private String address;
     private double rent;
     private int availability;
+
+    public Person getP() {
+        return p;
+    }
+
+    public void setP(Person p) throws Exception {
+        if (p.isUpper18()){
+            if (p.salaryIsUpperThan12000()){
+                this.p = p;
+            }
+            else {
+                throw UnsupportedOperationException("You do not earn enough money");
+            }
+        }
+        else {
+            throw UnsupportedOperationException("You are too young");
+        }
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public double getRent() {
+        return rent;
+    }
+
+    public void setRent(double rent) {
+        this.rent = rent;
+    }
+
+    public int getAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(int availability) {
+        this.availability = availability;
+    }
+
+    private Exception UnsupportedOperationException(String you_do_not_earn_enough_money) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+
+  
+    
 }
