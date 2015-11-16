@@ -13,16 +13,20 @@ public class Assignment1Software {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
-        Calculator cal = new Calculator();
-        Area area = new Area();
         
-        System.out.println(cal.factorial(5));
-        System.out.println(cal.subtract(-5, -5));
-        System.out.println(cal.divide(3, 0));
-        System.out.println(area.equilateralTriangleArea(5));
-        
+        // main is here to check. There is not a real program
+        // It has been created to use TDD and Mocks
+        Person p = new Person();
+        House h = new House();
+        p.setName("Adrián");
+        p.setSurname("Calvo");
+        p.setSalary(12000);
+        p.setAge(18);
+        h.setP(p);
+        System.out.println(h.getP());
     }
     
 }

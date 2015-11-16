@@ -95,4 +95,11 @@ public class CalculatorTest {
         int result = cal.squareRoot(9);
         assertEquals(3, result);
     }
+    
+    //@Test(expected = java.lang.AssertionError.class)
+    @Test
+    public void squareRoot_CannotDoAnSquareRootUsingNegativeNumbers_ReturnException(){
+        int result = cal.squareRoot(-5);
+        fail("Negative numbers are not valid");
+    }
 }

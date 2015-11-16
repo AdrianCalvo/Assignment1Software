@@ -15,6 +15,11 @@ public class Person {
     private int age;
     private double salary;
 
+    @Override
+    public String toString() {
+        return "Person{" + "name=" + name + ", surname=" + surname + ", age=" + age + ", salary=" + salary + '}';
+    }
+
     public String getName() {
         return name;
     }

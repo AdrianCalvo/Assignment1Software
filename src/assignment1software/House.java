@@ -13,7 +13,15 @@ public class House {
     private Person p;
     private String address;
     private double rent;
-    private int availability;
+    private int availabilityInMonths;
+
+    public int getAvailabilityInMonths() {
+        return availabilityInMonths;
+    }
+
+    public void setAvailabilityInMonths(int availabilityInMonths) {
+        this.availabilityInMonths = availabilityInMonths;
+    }
 
     public Person getP() {
         return p;
@@ -49,13 +57,7 @@ public class House {
         this.rent = rent;
     }
 
-    public int getAvailability() {
-        return availability;
-    }
-
-    public void setAvailability(int availability) {
-        this.availability = availability;
-    }
+  
 
     private Exception UnsupportedOperationException(String you_do_not_earn_enough_money) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

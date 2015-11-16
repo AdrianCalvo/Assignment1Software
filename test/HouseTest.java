@@ -48,7 +48,7 @@ public class HouseTest {
         when(personWhoCanGetTheHouse.isUpper18()).thenReturn(true);
         when(personWhoCanGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
         house.setAddress("Vaxjo Campus");
-        house.setAvailability(10);
+        house.setAvailabilityInMonths(10);
         house.setRent(3000);
         
     }
@@ -58,8 +58,6 @@ public class HouseTest {
     }
 
     // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
     @Test
     public void setPerson_ifThePersonCanRentTheHouse_ThenVerify() throws Exception {
         house.setP(personWhoCanGetTheHouse);
