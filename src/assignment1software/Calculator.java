@@ -44,7 +44,12 @@ public class Calculator {
     }
     
     public int squareRoot(int a){
-        int rest = (int) sqrt(9);
-        return rest;
+        if (a < NUMBERZERO){
+            return 0;
+        }else {
+            int rest = (int) sqrt(9);
+            return rest; 
+        }
+        
     }
 }
