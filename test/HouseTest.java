@@ -13,6 +13,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
@@ -60,8 +61,12 @@ public class HouseTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void setPerson_ifThePersonCanRentTheHouse_ThenReturnOk() throws Exception {
+    public void setPerson_ifThePersonCanRentTheHouse_ThenVerify() throws Exception {
         house.setP(personWhoCanGetTheHouse);
+        // verify if isUpper18 has been called.
+        verify(personWhoCanGetTheHouse).isUpper18();
+        // verify if salaryIsUpperThan12000 has been called.
+        verify(personWhoCanGetTheHouse).salaryIsUpperThan12000();
     }
     
     @Test (expected =  UnsupportedOperationException.class)
