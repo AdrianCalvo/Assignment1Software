@@ -32,7 +32,7 @@ public class PersonTest {
     @Before
     public void setUp() {
         p = new Person();
-        //p.setName("Adri");
+        p.setName("Adri");
         p.setSurname("Calvo");
         p.setAge(22);
         p.setSalary(15000);
@@ -49,6 +49,6 @@ public class PersonTest {
     public void getName_theNameMustBeCorrect_ThenReturnValue() {
         String name = p.getName();
         String nameExpected = "Adri";
-        assertEquals(name, nameExpected, this);
+        assertEquals("The name must be Adri", name, nameExpected);
     }
 }
