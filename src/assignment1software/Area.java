@@ -28,16 +28,15 @@ public class Area {
     }
     
     public double triangleArea(double base, double height){
+        double res;
         if (base == NUMBERZERO || height == NUMBERZERO){
-            return NUMBERZERO;
+            res = NUMBERZERO;
         }
         else {
-            double res = base*height/NUMBERTWO;
-            return res;  
+            res = base*height/NUMBERTWO;
+              
         }
-        
+        return res;
     }
-    
-    
     
 }
