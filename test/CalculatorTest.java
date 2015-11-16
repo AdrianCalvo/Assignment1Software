@@ -98,7 +98,7 @@ public class CalculatorTest {
     
     @Test(expected = java.lang.AssertionError.class)
     public void squareRoot_CannotDoAnSquareRootUsingNegativeNumbers_ReturnException(){
-        int result = cal.squareRoot(-5);
+        int r = cal.squareRoot(-5);
         fail("Negative numbers are not valid");
     }
 }
