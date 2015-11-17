@@ -36,7 +36,7 @@ public class Calculator {
     }
     
     public int factorial(int a) throws Exception  {
-        if (a < 0) {
+        if (a < NUMBERZERO) {
             throw new Exception();
         
         } 
