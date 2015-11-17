@@ -29,7 +29,7 @@ public class Person {
     }
 
     public String getSurname() {
-        //return surname;
+        return surname;
     }
 
     public void setSurname(String surname) {
