@@ -117,4 +117,11 @@ public class HouseTest {
         double rentExpected = 3000;
         assertEquals(rentExpected, rent, DELTA);
     }
+    
+    @Test
+    public void getAddress_MustReturnAValue_ReturnValue(){
+        String address = house.getAddress();
+        String addressExpected = "Kalmar Campus";
+        assertEquals(addressExpected, address);
+    }
 }
