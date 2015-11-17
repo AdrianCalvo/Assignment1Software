@@ -75,7 +75,7 @@ public class CalculatorTest {
         int result = cal.divide(9, 3);
         assertEquals(3, result);
     }
-    @Test(expected = java.lang.AssertionError.class)
+    @Test(expected = java.lang.Exception.class)
     public void divideInteger_CannotDivideBetweenZero_ReturnException() throws Exception{
         //Calculator cal = new Calculator();
         int result = cal.divide(5, 0);
