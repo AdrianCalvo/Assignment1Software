@@ -123,4 +123,9 @@ public class PersonTest {
         p.setAge(15);
         assertFalse(p.isUpper18());
     }
+    
+    @Test
+    public void salaryIsUpper12000_TheSalaryIsUpperThan12000_ReturnTrue(){
+        assertTrue(p.salaryIsUpperThan12000());
+    }
 }

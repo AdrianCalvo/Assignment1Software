@@ -63,11 +63,11 @@ public class Person {
     }
     
     public boolean salaryIsUpperThan12000(){
-        if (this.salary >= 12000){
-            return true;
-        }
-        else {
-            return false;
-        }
+//        if (this.salary >= 12000){
+//            return true;
+//        }
+//        else {
+//            return false;
+//        }
     }
 }
