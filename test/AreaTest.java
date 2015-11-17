@@ -85,8 +85,8 @@ public class AreaTest {
     
     @Test (expected = java.lang.AssertionError.class)
     public void triangleArea_NumbersMustNotBeNegativeA_ReturnException(){
-//        Area are = new Area();
-//        double res = are.triangleArea(-5, 2);
-//        fail();
+        Area are = new Area();
+        double res = are.triangleArea(-5, 2);
+        fail();
     }
 }
