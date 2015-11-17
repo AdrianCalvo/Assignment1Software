@@ -37,7 +37,7 @@ public class PersonTest {
         p.setName("Adri");
         p.setSurname("Calvo");
         p.setAge(22);
-        p.setSalary(15000);
+        p.setSalary(15000.0);
     }
     
     @After
@@ -101,7 +101,7 @@ public class PersonTest {
     @Test
     public void toString_mustReturnPersonsValues_ReturnValues(){
         String toString;
-        String toStringExpected = "Adri" + "Calvo" + 22 + 15000;
+        String toStringExpected = "Adri" + "Calvo" + 22 + 15000.0;
         String name = p.getName();
         String surname = p.getSurname();
         int age = p.getAge();
