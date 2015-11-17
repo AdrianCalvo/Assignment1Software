@@ -82,6 +82,13 @@ public class CalculatorTest {
         fail("Zero is not valid");
     }
     
+    @Test(expected = java.lang.Exception.class)
+    public void divideInteger_CannotDivideBetweenZeroA_ReturnException() throws Exception{
+        //Calculator cal = new Calculator();
+        int result = cal.divide(0, 5);
+        fail("Zero is not valid");
+    }
+    
     @Test
     public void factorial_ValueOfFactorial_ReturnFactorialOf5(){
         //Calculator cal = new Calculator();

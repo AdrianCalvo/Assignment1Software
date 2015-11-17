@@ -29,26 +29,34 @@ import static java.lang.Math.sqrt;
     }
     
     public int divide(int a, int b) throws Exception{
-<span class="pc bpc" id="L32" title="1 of 4 branches missed.">        if (a == NUMBERZERO || b == NUMBERZERO){</span>
-<span class="fc" id="L33">            return NUMBERZERO;</span>
-        }else
-<span class="fc" id="L35">        return a/b;</span>
+        // I am not sure why but if I use:
+        // if (a == 0 || b == 0) Coverage does not take into account both
+<span class="fc bfc" id="L34" title="All 4 branches covered.">        if (a == NUMBERZERO || b == NUMBERZERO){</span>
+<span class="fc" id="L35">            throw new Exception();</span>
+        }
+//        if (a == NUMBERZERO){
+//            throw new Exception();
+//        }else if (b == NUMBERZERO){
+//            throw new Exception();
+//        }
+        else
+<span class="fc" id="L43">        return a/b;</span>
     }
     
     public int factorial(int a){
-<span class="fc" id="L39">        int number = 1;</span>
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        for (int i = 1; i &lt;= a; i++) {</span>
-<span class="fc" id="L41">            number *= i;</span>
+<span class="fc" id="L47">        int number = 1;</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (int i = 1; i &lt;= a; i++) {</span>
+<span class="fc" id="L49">            number *= i;</span>
         }
-<span class="fc" id="L43">        return number;</span>
+<span class="fc" id="L51">        return number;</span>
     }
     
     public int squareRoot(int a){
-<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (a &lt; NUMBERZERO){</span>
-<span class="fc" id="L48">            return 0;</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (a &lt; NUMBERZERO){</span>
+<span class="fc" id="L56">            return 0;</span>
         }else {
-<span class="fc" id="L50">            int rest = (int) sqrt(9);</span>
-<span class="fc" id="L51">            return rest; </span>
+<span class="fc" id="L58">            int rest = (int) sqrt(9);</span>
+<span class="fc" id="L59">            return rest; </span>
         }
         
     }

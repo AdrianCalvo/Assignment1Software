@@ -17,6 +17,7 @@ public class Assignment1Software {
      */
     public static void main(String[] args) throws Exception {
         
+        
         // main is here to check. There is not a real program
         // It has been created to use TDD and Mocks
         Person p = new Person();

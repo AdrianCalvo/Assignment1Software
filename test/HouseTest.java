@@ -70,5 +70,8 @@ public class HouseTest {
     @Test (expected =  UnsupportedOperationException.class)
     public void setPerson_thisPersonCannotGetTheHouse_ThenReturnException() throws Exception{
         house.setP(personWhoCannotGetTheHouse);
+        
+        verify(personWhoCannotGetTheHouse).isUpper18();
+        verify(personWhoCannotGetTheHouse).salaryIsUpperThan12000();
     }
 }
