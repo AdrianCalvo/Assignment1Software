@@ -114,7 +114,7 @@ public class HouseTest {
     @Test
     public void getRent_MustReturnAValue_ReturnValue(){
         double rent = house.getRent();
-        double rentExpected = 2500;
+        double rentExpected = 3000;
         assertEquals(rentExpected, rent, DELTA);
     }
 }
