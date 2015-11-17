@@ -35,20 +35,28 @@ import static java.lang.Math.sqrt;
 <span class="fc" id="L35">        return a/b;</span>
     }
     
-    public int factorial(int a){
-<span class="fc" id="L39">        int number = 1;</span>
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        for (int i = 1; i &lt;= a; i++) {</span>
-<span class="fc" id="L41">            number *= i;</span>
+    public int factorial(int a) throws Exception  {
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (a &lt; NUMBERZERO) {</span>
+<span class="fc" id="L40">            throw new Exception();</span>
+        
+        } 
+        else {
+            
+<span class="fc" id="L45">            int number = 1;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">            for (int i = 1; i &lt;= a; i++) {</span>
+<span class="fc" id="L47">                number *= i;</span>
+            }
+<span class="fc" id="L49">            return number;</span>
         }
-<span class="fc" id="L43">        return number;</span>
+
     }
     
     public int squareRoot(int a){
-<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (a &lt; NUMBERZERO){</span>
-<span class="fc" id="L48">            return 0;</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (a &lt; NUMBERZERO){</span>
+<span class="fc" id="L56">            return 0;</span>
         }else {
-<span class="fc" id="L50">            int rest = (int) sqrt(9);</span>
-<span class="fc" id="L51">            return rest; </span>
+<span class="fc" id="L58">            int rest = (int) sqrt(9);</span>
+<span class="fc" id="L59">            return rest; </span>
         }
         
     }

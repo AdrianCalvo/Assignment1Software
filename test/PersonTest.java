@@ -47,7 +47,7 @@ public class PersonTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     
-    // Just to check get
+    
     @Test
     public void getName_theNameMustBeCorrect_ThenReturnValue() {
         String name = p.getName();
@@ -55,12 +55,20 @@ public class PersonTest {
         assertEquals(expected, name, nameExpected);
     }
     
-    // Just to check set
+    
     @Test
     public void setName_mustSetTheName(){
         String name = "Name";
         p.setName(name);
         assertNotNull(p.getName());
+    }
+    
+    @Test 
+    public void getAge_ThisGetMustReturnTheAge_ReturnValue(){
+        int age = p.getAge();
+        int ageExpected = 22;
+        assertEquals(ageExpected, age);
+        
     }
     
     
