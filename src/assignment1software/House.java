@@ -52,15 +52,5 @@ public class House {
     public void setRent(double rent) {
         this.rent = rent;
     }
-
   
-
-    private Exception UnsupportedOperationException(String you_do_not_earn_enough_money) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-   
-
-  
-    
 }

@@ -48,7 +48,7 @@ public class HouseTest {
         when(personWhoCanGetTheHouse.isUpper18()).thenReturn(true);
         when(personWhoCanGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
         house.setAddress("Vaxjo Campus");
-        house.setAvailabilityInMonths(10);
+        house.setAvailabilityInMonths(9);
         house.setRent(3000);
         
     }
@@ -62,15 +62,17 @@ public class HouseTest {
     public void setPerson_ifThePersonCanRentTheHouse_ThenVerify() throws Exception {
         personWhoCanGetTheHouse.setAge(18);
         personWhoCanGetTheHouse.setSalary(12000);
-        house.setP(personWhoCanGetTheHouse);
         
+        house.setP(personWhoCanGetTheHouse);
         when(personWhoCanGetTheHouse.isUpper18()).thenReturn(true);
+        when(personWhoCanGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
+        
         // verify if isUpper18 has been called.
         verify(personWhoCanGetTheHouse).isUpper18();
-        
-        when(personWhoCanGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
         // verify if salaryIsUpperThan12000 has been called.
         verify(personWhoCanGetTheHouse).salaryIsUpperThan12000();
+        
+        
     }
     
     @Test (expected =  java.lang.Exception.class)
@@ -87,5 +89,24 @@ public class HouseTest {
         verify(personWhoCannotGetTheHouse).salaryIsUpperThan12000();
     }
     
+    @Test (expected =  java.lang.Exception.class)
+    public void setPerson_thisPersonCannotGetTheHouseFailsOneValue_ThenReturnException() throws Exception{
+        personWhoCannotGetTheHouse.setAge(17);
+        personWhoCannotGetTheHouse.setSalary(13000);
+                
+        house.setP(personWhoCannotGetTheHouse);
+        
+        when(personWhoCannotGetTheHouse.isUpper18()).thenReturn(false);
+        when(personWhoCannotGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
+        
+        verify(personWhoCannotGetTheHouse).isUpper18();
+        verify(personWhoCannotGetTheHouse).salaryIsUpperThan12000();
+    }
     
+    @Test
+    public void getAvailailityInMonths_MustReturnAValue_ReturnValue(){
+        int availa = house.getAvailabilityInMonths();
+        int availaExpected = 10;
+        assertEquals(availaExpected, availa);
+    }
 }
