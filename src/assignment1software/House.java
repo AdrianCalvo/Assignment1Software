@@ -28,18 +28,14 @@ public class House {
     }
 
     public void setP(Person p) throws Exception {
-        if (p.isUpper18()){
-            if (p.salaryIsUpperThan12000()){
-                this.p = p;
-            }
-            else {
-                throw UnsupportedOperationException("You do not earn enough money");
-            }
-        }
-        else {
-            throw UnsupportedOperationException("You are too young");
-        }
+       if(p.isUpper18()== true && p.salaryIsUpperThan12000()==true){
+           this.p = p;
+       } 
+       else {
+           throw new Exception();
+       }
     }
+        
 
     public String getAddress() {
         return address;

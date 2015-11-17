@@ -15,10 +15,10 @@ public class Person {
     private int age;
     private double salary;
 
-    @Override
-    public String toString() {
-        return name + surname + age + salary;
-    }
+//    @Override
+//    public String toString() {
+//        return name + surname + age + salary;
+//    }
 
     public String getName() {
         return name;

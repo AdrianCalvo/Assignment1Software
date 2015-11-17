@@ -60,18 +60,32 @@ public class HouseTest {
     // TODO add test methods here.
     @Test
     public void setPerson_ifThePersonCanRentTheHouse_ThenVerify() throws Exception {
+        personWhoCanGetTheHouse.setAge(18);
+        personWhoCanGetTheHouse.setSalary(12000);
         house.setP(personWhoCanGetTheHouse);
+        
+        when(personWhoCanGetTheHouse.isUpper18()).thenReturn(true);
         // verify if isUpper18 has been called.
         verify(personWhoCanGetTheHouse).isUpper18();
+        
+        when(personWhoCanGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
         // verify if salaryIsUpperThan12000 has been called.
         verify(personWhoCanGetTheHouse).salaryIsUpperThan12000();
     }
     
-    @Test (expected =  UnsupportedOperationException.class)
+    @Test (expected =  java.lang.Exception.class)
     public void setPerson_thisPersonCannotGetTheHouse_ThenReturnException() throws Exception{
+        personWhoCannotGetTheHouse.setAge(17);
+        personWhoCannotGetTheHouse.setSalary(11000);
+                
         house.setP(personWhoCannotGetTheHouse);
+        
+        when(personWhoCannotGetTheHouse.isUpper18()).thenReturn(false);
+        when(personWhoCannotGetTheHouse.salaryIsUpperThan12000()).thenReturn(false);
         
         verify(personWhoCannotGetTheHouse).isUpper18();
         verify(personWhoCannotGetTheHouse).salaryIsUpperThan12000();
     }
+    
+    
 }

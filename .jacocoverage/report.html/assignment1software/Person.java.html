@@ -15,10 +15,10 @@ package assignment1software;
     private int age;
     private double salary;
 
-    @Override
-    public String toString() {
-<span class="nc" id="L20">        return name + surname + age + salary;</span>
-    }
+//    @Override
+//    public String toString() {
+//        return name + surname + age + salary;
+//    }
 
     public String getName() {
 <span class="fc" id="L24">        return name;</span>
@@ -63,12 +63,13 @@ package assignment1software;
     }
     
     public boolean salaryIsUpperThan12000(){
-<span class="nc bnc" id="L66" title="All 2 branches missed.">        if (this.salary &gt;= 12000){</span>
-<span class="nc" id="L67">            return true;</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">        if (this.salary &gt;= 12000){</span>
+<span class="fc" id="L67">            return true;</span>
         }
         else {
-<span class="nc" id="L70">            return false;</span>
+<span class="fc" id="L70">            return false;</span>
         }
+
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
