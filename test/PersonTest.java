@@ -17,6 +17,7 @@ import static org.junit.Assert.*;
  * @author adri
  */
 public class PersonTest {
+    public final double DELTA = 0.0001;
     Person p;
     String expected = "It must be: ";
     public PersonTest() {
@@ -90,6 +91,12 @@ public class PersonTest {
         assertNotNull(age);
     }
     
+    @Test
+    public void getSalary_mustHaveSalary_ReturnSalary(){
+        double salary = p.getSalary();
+        double salayExpected = 15000;
+        assertEquals(salayExpected, salary, DELTA);
+    }
     
     
 }
