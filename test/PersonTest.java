@@ -117,4 +117,10 @@ public class PersonTest {
         p.setAge(18);
         assertTrue(p.isUpper18());
     }
+    
+    @Test 
+    public void isUpper18_TheUserIsNotUpper18_ThenReturnFalse(){
+        p.setAge(15);
+        assertFalse(p.isUpper18());
+    }
 }

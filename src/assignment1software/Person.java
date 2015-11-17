@@ -56,10 +56,10 @@ public class Person {
         if (this.age >= 18){
             return true;
         }
-        else{
-            return false;
-        }
-        
+//        else{
+//            return false;
+//        }
+        return true;
     }
     
     public boolean salaryIsUpperThan12000(){
