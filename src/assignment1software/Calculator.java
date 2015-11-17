@@ -36,18 +36,18 @@ public class Calculator {
     }
     
     public int factorial(int a) throws Exception  {
-//        if (a <= 0) {
-//            throw new Exception();
-//        
-//        } 
-        //else {
+        if (a < 0) {
+            throw new Exception();
+        
+        } 
+        else {
             
             int number = 1;
             for (int i = 1; i <= a; i++) {
                 number *= i;
             }
             return number;
-        //}
+        }
 
     }
     

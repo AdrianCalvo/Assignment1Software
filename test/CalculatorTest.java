@@ -95,7 +95,7 @@ public class CalculatorTest {
         int result = cal.factorial(5);
         assertEquals(120, result);
     }
-     @Test
+     @Test(expected = java.lang.Exception.class)
     public void factorial_FactorialCannotBeNegative_ThrowException() throws Exception{
         //Calculator cal = new Calculator();
         int result = cal.factorial(-5);
