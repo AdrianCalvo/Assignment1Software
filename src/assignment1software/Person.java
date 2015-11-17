@@ -37,7 +37,7 @@ public class Person {
     }
 
     public int getAge() {
-        //return age;
+        return age;
     }
 
     public void setAge(int age) {
