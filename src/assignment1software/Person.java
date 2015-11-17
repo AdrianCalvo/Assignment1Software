@@ -45,7 +45,7 @@ public class Person {
     }
 
     public double getSalary() {
-        //return salary;
+        return salary;
     }
 
     public void setSalary(double salary) {
