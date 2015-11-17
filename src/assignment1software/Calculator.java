@@ -29,18 +29,26 @@ public class Calculator {
     }
     
     public int divide(int a, int b) throws Exception{
-        if (a == NUMBERZERO || b == NUMBERZERO){
+        if (a <= NUMBERZERO || b <= NUMBERZERO){
             throw new Exception();
         }else
         return a/b;
     }
     
-    public int factorial(int a){
-        int number = 1;
-        for (int i = 1; i <= a; i++) {
-            number *= i;
-        }
-        return number;
+    public int factorial(int a) throws Exception  {
+//        if (a <= 0) {
+//            throw new Exception();
+//        
+//        } 
+        //else {
+            
+            int number = 1;
+            for (int i = 1; i <= a; i++) {
+                number *= i;
+            }
+            return number;
+        //}
+
     }
     
     public int squareRoot(int a){

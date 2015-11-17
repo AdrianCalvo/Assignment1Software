@@ -90,11 +90,18 @@ public class CalculatorTest {
     }
     
     @Test
-    public void factorial_ValueOfFactorial_ReturnFactorialOf5(){
+    public void factorial_ValueOfFactorial_ReturnFactorialOf5() throws Exception{
         //Calculator cal = new Calculator();
         int result = cal.factorial(5);
         assertEquals(120, result);
     }
+     @Test
+    public void factorial_FactorialCannotBeNegative_ThrowException() throws Exception{
+        //Calculator cal = new Calculator();
+        int result = cal.factorial(-5);
+        fail();
+    }
+    
     
     @Test
     public void squareRoot_ValueOfSquareRoot_ReturnSquareRootOf9(){

@@ -29,7 +29,7 @@ import static java.lang.Math.sqrt;
     }
     
     public int divide(int a, int b) throws Exception{
-<span class="fc bfc" id="L32" title="All 4 branches covered.">        if (a == NUMBERZERO || b == NUMBERZERO){</span>
+<span class="fc bfc" id="L32" title="All 4 branches covered.">        if (a &lt;= NUMBERZERO || b &lt;= NUMBERZERO){</span>
 <span class="fc" id="L33">            throw new Exception();</span>
         }else
 <span class="fc" id="L35">        return a/b;</span>
