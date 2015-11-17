@@ -98,5 +98,17 @@ public class PersonTest {
         assertEquals(salayExpected, salary, DELTA);
     }
     
+    @Test
+    public void toString_mustReturnPersonsValues_ReturnValues(){
+        String toString;
+        String toStringExpected = "Adri" + "Calvo" + 22 + 15000;
+        String name = p.getName();
+        String surname = p.getSurname();
+        int age = p.getAge();
+        double salary = p.getSalary();
+        toString = name + surname + age + salary;
+        assertEquals(toStringExpected, toString);
+    }
+    
     
 }
