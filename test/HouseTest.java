@@ -26,6 +26,7 @@ public class HouseTest {
     Person personWhoCannotGetTheHouse;
     House house;
     
+    public final double DELTA = 0.0001;
     
     public HouseTest() {
     }
@@ -108,5 +109,12 @@ public class HouseTest {
         int availa = house.getAvailabilityInMonths();
         int availaExpected = 10;
         assertEquals(availaExpected, availa);
+    }
+    
+    @Test
+    public void getRent_MustReturnAValue_ReturnValue(){
+        double rent = house.getRent();
+        double rentExpected = 2500;
+        assertEquals(rentExpected, rent, DELTA);
     }
 }
