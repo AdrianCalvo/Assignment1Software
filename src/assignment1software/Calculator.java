@@ -29,8 +29,6 @@ public class Calculator {
     }
     
     public int divide(int a, int b) throws Exception{
-        // I am not sure why but if I use:
-        // if (a == 0 || b == 0) Coverage does not take into account both
         if (a == NUMBERZERO || b == NUMBERZERO){
             throw new Exception();
         }else

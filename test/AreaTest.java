@@ -62,6 +62,7 @@ public class AreaTest {
         fail("An area cannot have any 0");
     }
     
+    
     @Test 
     public void triangleArea_AddTwoCorrectValue_ReturnCorrectValue(){
         Area area = new Area();
@@ -74,5 +75,18 @@ public class AreaTest {
         Area area = new Area();
         double are = area.triangleArea(0, 5);
         fail();
+    }
+     @Test (expected = java.lang.AssertionError.class)
+    public void triangleArea_AnyNumberMustNotBeZeroB_ReturnException(){
+        Area area = new Area();
+        double are = area.triangleArea(5, 0);
+        fail();
+    }
+    
+    @Test (expected = java.lang.AssertionError.class)
+    public void triangleArea_NumbersMustNotBeNegativeA_ReturnException(){
+//        Area are = new Area();
+//        double res = are.triangleArea(-5, 2);
+//        fail();
     }
 }
