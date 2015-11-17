@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
 
 /**
  *
@@ -19,6 +20,7 @@ import static org.junit.Assert.*;
 public class PersonTest {
     public final double DELTA = 0.0001;
     Person p;
+    Object o;
     String expected = "It must be: ";
     public PersonTest() {
     }
@@ -110,5 +112,10 @@ public class PersonTest {
         assertEquals(toStringExpected, toString);
     }
     
-    
+    @Test
+    public void isUpper18_TheUserIsUpper18_ThenReturnTrue(){
+        p.setAge(15);
+        boolean ageUpper18;
+        assertTrue(p.isUpper18());
+    }
 }
