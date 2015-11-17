@@ -70,6 +70,12 @@ public class PersonTest {
         assertEquals(ageExpected, age);
         
     }
+    @Test
+    public void setAge_mustSetTheAge(){
+        int age = 18;
+        p.setAge(age);
+        assertNotNull(age);
+    }
     
     
     
