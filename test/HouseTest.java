@@ -48,7 +48,7 @@ public class HouseTest {
         when(personWhoCanGetTheHouse.isUpper18()).thenReturn(true);
         when(personWhoCanGetTheHouse.salaryIsUpperThan12000()).thenReturn(true);
         house.setAddress("Vaxjo Campus");
-        house.setAvailabilityInMonths(9);
+        house.setAvailabilityInMonths(10);
         house.setRent(3000);
         
     }
