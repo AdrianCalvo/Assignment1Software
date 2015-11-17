@@ -24,7 +24,7 @@ public class HouseTest {
     
     Person personWhoCanGetTheHouse;
     Person personWhoCannotGetTheHouse;
-    
+    Person person;
     House house;
     
     public final double DELTA = 0.0001;
@@ -45,7 +45,7 @@ public class HouseTest {
         house = new House();
         personWhoCanGetTheHouse = mock(Person.class); // Object that simulates person
         personWhoCannotGetTheHouse = mock(Person.class);
-        
+        person = mock(Person.class);
         when(personWhoCannotGetTheHouse.isUpper18()).thenReturn(false);
         when(personWhoCannotGetTheHouse.salaryIsUpperThan12000()).thenReturn(false);
         when(personWhoCanGetTheHouse.isUpper18()).thenReturn(true);
@@ -128,8 +128,8 @@ public class HouseTest {
     }
     
     @Test
-    public void getPerson_ReturnNotNull(){
-        //house.getP();
+    public void getPerson_ReturnNotNull() throws Exception{
+        house.setP(personWhoCanGetTheHouse);
         assertNotNull(house.getP());
     }
 }
