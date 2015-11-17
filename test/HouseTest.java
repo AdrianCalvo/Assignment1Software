@@ -121,7 +121,7 @@ public class HouseTest {
     @Test
     public void getAddress_MustReturnAValue_ReturnValue(){
         String address = house.getAddress();
-        String addressExpected = "Kalmar Campus";
+        String addressExpected = "Vaxjo Campus";
         assertEquals(addressExpected, address);
     }
 }
