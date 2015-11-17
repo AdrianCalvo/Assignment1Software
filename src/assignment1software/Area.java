@@ -29,7 +29,7 @@ public class Area {
     
     public double triangleArea(double base, double height){
         double res;
-        if (base == NUMBERZERO || height == NUMBERZERO){
+        if (base <= NUMBERZERO || height <= NUMBERZERO){
             res = NUMBERZERO;
         }
         else {
