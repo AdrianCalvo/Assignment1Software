@@ -55,6 +55,12 @@ public class PersonTest {
         assertEquals(expected, name, nameExpected);
     }
     
+    @Test
+    public void getSurname_theSurnameMustBeCorrect_ThenReturnValue() {
+        String name = p.getSurname();
+        String nameExpected = "Calvo";
+        assertEquals(expected, name, nameExpected);
+    }
     
     @Test
     public void setName_mustSetTheName(){
