@@ -115,7 +115,6 @@ public class PersonTest {
     @Test
     public void isUpper18_TheUserIsUpper18_ThenReturnTrue(){
         p.setAge(18);
-        boolean ageUpper18;
         assertTrue(p.isUpper18());
     }
 }
