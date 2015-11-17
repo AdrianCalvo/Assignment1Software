@@ -30,7 +30,7 @@ public class Calculator {
     
     public int divide(int a, int b) throws Exception{
         if (a == NUMBERZERO || b == NUMBERZERO){
-            return NUMBERZERO;
+            throw new Exception();
         }else
         return a/b;
     }

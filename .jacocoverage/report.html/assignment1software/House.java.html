@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>House.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Assignment1Software&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">assignment1software</a> &gt; <span class="el_source">House.java</span></div><h1>House.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package assignment1software;
+
+/**
+ *
+ * @author adri
+ */
+<span class="fc" id="L12">public class House {</span>
+    private Person p;
+    private String address;
+    private double rent;
+    private int availabilityInMonths;
+
+    public int getAvailabilityInMonths() {
+<span class="nc" id="L19">        return availabilityInMonths;</span>
+    }
+
+    public void setAvailabilityInMonths(int availabilityInMonths) {
+<span class="fc" id="L23">        this.availabilityInMonths = availabilityInMonths;</span>
+<span class="fc" id="L24">    }</span>
+
+    public Person getP() {
+<span class="nc" id="L27">        return p;</span>
+    }
+
+    public void setP(Person p) throws Exception {
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">        if (p.isUpper18()){</span>
+<span class="pc bpc" id="L32" title="1 of 2 branches missed.">            if (p.salaryIsUpperThan12000()){</span>
+<span class="fc" id="L33">                this.p = p;</span>
+            }
+            else {
+<span class="nc" id="L36">                throw UnsupportedOperationException(&quot;You do not earn enough money&quot;);</span>
+            }
+        }
+        else {
+<span class="nc" id="L40">            throw UnsupportedOperationException(&quot;You are too young&quot;);</span>
+        }
+<span class="fc" id="L42">    }</span>
+
+    public String getAddress() {
+<span class="nc" id="L45">        return address;</span>
+    }
+
+    public void setAddress(String address) {
+<span class="fc" id="L49">        this.address = address;</span>
+<span class="fc" id="L50">    }</span>
+
+    public double getRent() {
+<span class="nc" id="L53">        return rent;</span>
+    }
+
+    public void setRent(double rent) {
+<span class="fc" id="L57">        this.rent = rent;</span>
+<span class="fc" id="L58">    }</span>
+
+  
+
+    private Exception UnsupportedOperationException(String you_do_not_earn_enough_money) {
+<span class="fc" id="L63">        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;); //To change body of generated methods, choose Tools | Templates.</span>
+    }
+
+   
+
+  
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>
