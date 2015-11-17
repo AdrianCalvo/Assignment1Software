@@ -128,4 +128,11 @@ public class PersonTest {
     public void salaryIsUpper12000_TheSalaryIsUpperThan12000_ReturnTrue(){
         assertTrue(p.salaryIsUpperThan12000());
     }
+    
+    @Test
+    public void salaryIsUpper12000_TheSalaryIsNotUpperThan12000_ReturnFalse(){
+        p.setSalary(11000);
+        assertFalse(p.salaryIsUpperThan12000());
+    }
+    
 }

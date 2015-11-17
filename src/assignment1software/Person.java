@@ -66,8 +66,9 @@ public class Person {
         if (this.salary >= 12000){
             return true;
         }
-        else {
-            return false;
-        }
+//        else {
+//            return false;
+//        }
+return true;
     }
 }
