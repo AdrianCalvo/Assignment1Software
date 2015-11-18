@@ -79,4 +79,13 @@ public class InputOutputTest {
         double example = 2;
         when(io.readDouble()).thenReturn(example);
     }
+    
+    
+   @Test
+    public void testReadDoubleWhitIncorrectValue() throws Exception {
+        InputOutput io = mock(InputOutput.class);
+        BufferedReader keyboard = mock(BufferedReader.class);
+        String incorrect = "a";
+        when(io.readDouble()).thenThrow(java.lang.Exception.class);
+    }
 }
