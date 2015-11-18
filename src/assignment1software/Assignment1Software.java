@@ -16,18 +16,8 @@ public class Assignment1Software {
      * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
+        // main cannot be tested.
         
-        
-        // main is here to check. There is not a real program
-        // It has been created to use TDD and Mocks
-        Person p = new Person();
-        House h = new House();
-        p.setName("Adrián");
-        p.setSurname("Calvo");
-        p.setSalary(12000);
-        p.setAge(18);
-        h.setP(p);
-        System.out.println(h.getP());
     }
     
 }
