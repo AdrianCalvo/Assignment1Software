@@ -63,4 +63,12 @@ public class InputOutputTest {
         int example = 2;
         when(io.readInt()).thenReturn(example);
     }
+    
+    @Test
+    public void testReadIntWhitIncorrectValue() throws Exception {
+        InputOutput io = mock(InputOutput.class);
+        BufferedReader keyboard = mock(BufferedReader.class);
+        String incorrect = "a";
+        when(io.readInt()).thenThrow(java.lang.Exception.class);
+    }
 }
