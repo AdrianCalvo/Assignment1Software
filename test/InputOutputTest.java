@@ -55,4 +55,12 @@ public class InputOutputTest {
         String example = "Example";
         when(io.readString()).thenReturn(example);
     }
+    
+    @Test
+    public void testReadIntWithCorrectValue() {
+        InputOutput io = mock(InputOutput.class);
+        BufferedReader keyboard = mock(BufferedReader.class);
+        int example = 2;
+        when(io.readInt()).thenReturn(example);
+    }
 }
