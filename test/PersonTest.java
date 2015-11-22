@@ -139,8 +139,7 @@ public class PersonTest {
     @Test
     public void abstractClassMethodSoundUnderTestUsingStub(){
         Person stubPerson = mock(Person.class, Mockito.CALLS_REAL_METHODS);
-        
-        assertEquals("Speak", p.sound(), p.sound());
+        assertEquals("Speak", stubPerson.sound(), stubPerson.sound());
         
     }
     
