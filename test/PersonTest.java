@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.mockito.Mockito;
 import static org.mockito.Mockito.mock;
 
 /**
@@ -133,6 +134,14 @@ public class PersonTest {
     public void salaryIsUpper12000_TheSalaryIsNotUpperThan12000_ReturnFalse(){
         p.setSalary(11000);
         assertFalse(p.salaryIsUpperThan12000());
+    }
+    
+    @Test
+    public void abstractClassMethodSoundUnderTestUsingStub(){
+        Person stubPerson = mock(Person.class, Mockito.CALLS_REAL_METHODS);
+        
+        assertEquals("Speak", p.sound(), p.sound());
+        
     }
     
 }

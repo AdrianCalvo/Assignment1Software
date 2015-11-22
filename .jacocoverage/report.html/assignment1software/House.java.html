@@ -14,44 +14,47 @@ package assignment1software;
     private String address;
     private double rent;
     private int availabilityInMonths;
+    
+
+//    
 
     public int getAvailabilityInMonths() {
-<span class="fc" id="L19">        return availabilityInMonths;</span>
+<span class="fc" id="L22">        return availabilityInMonths;</span>
     }
 
     public void setAvailabilityInMonths(int availabilityInMonths) {
-<span class="fc" id="L23">        this.availabilityInMonths = availabilityInMonths;</span>
-<span class="fc" id="L24">    }</span>
+<span class="fc" id="L26">        this.availabilityInMonths = availabilityInMonths;</span>
+<span class="fc" id="L27">    }</span>
 
     public Person getP() {
-<span class="fc" id="L27">        return p;</span>
+<span class="fc" id="L30">        return p;</span>
     }
 
     public void setP(Person p) throws Exception {
-<span class="pc bpc" id="L31" title="1 of 4 branches missed.">       if(p.isUpper18()== true &amp;&amp; p.salaryIsUpperThan12000()==true){</span>
-<span class="fc" id="L32">           this.p = p;</span>
+<span class="pc bpc" id="L34" title="1 of 4 branches missed.">       if(p.isUpper18()== true &amp;&amp; p.salaryIsUpperThan12000()==true){</span>
+<span class="fc" id="L35">           this.p = p;</span>
        } 
        else {
-<span class="fc" id="L35">           throw new Exception();</span>
+<span class="fc" id="L38">           throw new Exception();</span>
        }
-<span class="fc" id="L37">    }</span>
+<span class="fc" id="L40">    }</span>
         
 
     public String getAddress() {
-<span class="fc" id="L41">        return address;</span>
+<span class="fc" id="L44">        return address;</span>
     }
 
     public void setAddress(String address) {
-<span class="fc" id="L45">        this.address = address;</span>
-<span class="fc" id="L46">    }</span>
+<span class="fc" id="L48">        this.address = address;</span>
+<span class="fc" id="L49">    }</span>
 
     public double getRent() {
-<span class="fc" id="L49">        return rent;</span>
+<span class="fc" id="L52">        return rent;</span>
     }
 
     public void setRent(double rent) {
-<span class="fc" id="L53">        this.rent = rent;</span>
-<span class="fc" id="L54">    }</span>
+<span class="fc" id="L56">        this.rent = rent;</span>
+<span class="fc" id="L57">    }</span>
   
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

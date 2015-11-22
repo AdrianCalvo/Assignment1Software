@@ -14,6 +14,9 @@ public class House {
     private String address;
     private double rent;
     private int availabilityInMonths;
+    
+
+//    
 
     public int getAvailabilityInMonths() {
         return availabilityInMonths;

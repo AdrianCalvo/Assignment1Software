@@ -132,4 +132,6 @@ public class HouseTest {
         house.setP(personWhoCanGetTheHouse);
         assertNotNull(house.getP());
     }
+    
+  
 }

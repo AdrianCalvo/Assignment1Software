@@ -9,11 +9,12 @@ package assignment1software;
  *
  * @author adri
  */
-public class Person {
+public class Person extends Mammal{
     private String name;
     private String surname;
     private int age;
     private double salary;
+    
 
 //    @Override
 //    public String toString() {
@@ -70,5 +71,10 @@ public class Person {
             return false;
         }
 
+    }
+
+    @Override
+    public String sound() {
+        return "Speak";
     }
 }
